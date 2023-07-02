@@ -1,0 +1,19 @@
+<%- include("partials/header"); -%>
+
+  <h1>Delete</h1>
+
+  <%  post.forEach(function(post){ %>
+
+    <form action="/delete" method="post">
+      <div class="item">
+        <input type="checkbox" name="checkbox" value="<%= post._id %>" input onchange="this.form.submit()">
+        <!-- <p id="list"><%=post.title%></p> -->
+        <h4 id="list"><%=post.title%></h4>
+      </div>
+    </form>
+    <% }) %>
+
+
+
+
+<%- include("partials/footer"); -%>

@@ -1,0 +1,40 @@
+
+<%- include("partials/header"); -%>
+    <h1>Home</h1>
+    <p> <%= startingContent %> </p>
+
+
+  <%  post.forEach(function(post){ %>
+
+    
+    <h1><%=post.title%></h1>
+    <p>
+      <% let len =0 %>
+    <%  post.title== null ? len=0 : len=post.content.length %>
+    <%= len>50 ? post.content.substring(0,50) : post.content  %>
+
+    
+    <a href="/posts/<%=post.title%>"><%= len>50 ? "read more" : ""  %></a>
+    </p>
+
+
+    <% }) %>
+
+    <!-- <form action="/compose" >
+      <button type="submit" class="btn btn-success compose btn-lg">Add a Blog</button>
+    </form>
+
+    <form action="/delete" >
+      <button type="submit" class="btn btn-danger compose btn-lg">Delete a Blog</button>
+    </form>
+
+    <form action="/logout" >
+      <button type="submit" class="btn btn-danger compose btn-lg">Logout</button>
+    </form> -->
+
+
+<%- include("partials/footer"); -%>
+
+
+
+
