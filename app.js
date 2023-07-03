@@ -91,7 +91,7 @@ passport.serializeUser(function(Post, cb) {
 passport.use(new GoogleStrategy({
   clientID: process.env.Client_ID,
   clientSecret: process.env.Client_secret,
-  callbackURL: "http://localhost:3000/auth/google/home",
+  callbackURL: "https://varma.cyclic.app/auth/google/home",
   userProfileURL: "https://www.googleapis.com/oauth2/v3/userinfo"
 },
 function(accessToken, refreshToken, profile, cb) {
