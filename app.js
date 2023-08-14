@@ -42,9 +42,9 @@ app.use(session({
 
 const homeStartingContent = "Step into a world of inspiration, insights, and imagination. Daily Journal is your canvas for expression, your sanctuary for ideas. Join us in celebrating the beauty of words and the stories they weave. Welcome aboard!";
 const aboutContent = "At Daily Journal, we're passionate about words and the stories they tell. Our platform is a canvas for thought-provoking ideas, creative expressions, and meaningful discussions. Join us in exploring the boundless world of words and sharing in the art of storytelling. Welcome to our community!";
-const contactContent = "Have a question, suggestion, or a story you want to share? We'd love to hear from you! At Daily Journal, we believe in the power of meaningful conversations and building connections./n"+
+const contactContent = "Have a question, suggestion, or a story you want to share? We'd love to hear from you! At Daily Journal, we believe in the power of meaningful conversations and building connections.\n"+
 
-"Feel free to reach out to us at contact@dailyjournal.com for any inquiries, feedback, or collaboration opportunities. We value your input and look forward to engaging with you./n"+
+"Feel free to reach out to us at contact@dailyjournal.com for any inquiries, feedback, or collaboration opportunities. We value your input and look forward to engaging with you.\n"+
 
 "Join us in shaping the narrative, one interaction at a time.";
 
